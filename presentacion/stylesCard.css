@@ -1,0 +1,73 @@
+
+/**
+Header
+**/
+.titulo{
+  justify-items: center;
+
+}
+
+/**
+Carnet
+**/
+
+.carnet {
+  width: 700px;
+  height: 400px;
+
+  background-color: rgb(253, 203, 65);
+
+  border: solid;
+  border-width: 3px;
+  border-radius: 10px;
+
+  justify-self: center;
+
+  display: flex;
+}
+
+.marcoFoto{
+  padding: 20px;
+
+  /* background-color: blue; */
+
+  width: 180px;
+}
+
+.pfp{
+  width: 170px;
+  height: 207px;
+  border: solid;
+  border-width: 2px;
+  border-radius: 5px;
+}
+
+.pfp:hover{
+  animation: zoom 1s infinite;
+}
+
+@keyframes zoom {
+  0%{
+    scale: 100%;
+  }
+
+  50%{
+    scale: 110%;
+  }
+
+  100%{
+    scale: 100%;
+  }
+}
+
+.listasContainer{
+  display: flex;
+}
+
+.lista{
+  margin-left: 30px;
+}
+
+.contenido{
+  /* background-color: red; */
+}
