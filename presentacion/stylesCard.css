@@ -13,9 +13,9 @@ Carnet
 
 .carnet {
   width: 700px;
-  height: 400px;
+  height: 250px;
 
-  background-color: rgb(253, 203, 65);
+  background-color: rgb(240, 163, 63);
 
   border: solid;
   border-width: 3px;
@@ -31,12 +31,12 @@ Carnet
 
   /* background-color: blue; */
 
-  width: 180px;
+  width: 200px;
 }
 
 .pfp{
-  width: 170px;
-  height: 207px;
+  width: 200px;
+  height: 148px;
   border: solid;
   border-width: 2px;
   border-radius: 5px;
@@ -62,6 +62,7 @@ Carnet
 
 .listasContainer{
   display: flex;
+  
 }
 
 .lista{
@@ -70,4 +71,6 @@ Carnet
 
 .contenido{
   /* background-color: red; */
+
+  margin-left: 10px;
 }
