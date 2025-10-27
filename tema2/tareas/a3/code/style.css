@@ -1,0 +1,55 @@
+body{
+    background-image: url("./img/sh2-remake2.png");
+    background-color: #484b49;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+}
+
+header{
+    display: flex;
+    height: 8rem;
+    width: auto;
+    background-color: #cbd1cd;
+}
+
+
+.logo{
+    height:80px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.links{
+    display: flex;
+    align-self: center;
+    margin-left: 50px;
+}
+
+.linkEspecifico{
+    margin-left: 50px;
+}
+
+
+/* Moviles */
+@media (min-height: 600px) and (min-width: 360px) {
+    body {
+        background-image: url("./img/sh-vertical.jpeg");
+        background-color: #484b49;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+/* Ipads */
+
+@media (min-height: 1000px) and (min-width: 800px) {
+    body {
+        background-image: url("./img/sh2-remake2.png");
+        /* background-size: 736px 1637px; */
+        background-color: #484b49;
+        background-repeat: inherit;
+        /* background-position: center; */
+        background-size: cover;
+    }
+}
