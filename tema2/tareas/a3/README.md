@@ -38,3 +38,10 @@ Una carpeta con el sitio web completo (index.html, galeria.html, contacto.html, 
 
 Un documento breve (1 página) explicando qué técnicas de optimización aplicaron.
 
+### Explicación
+
+Como técnicas de optimización he utilizado las requeridas en la tarea:
+
+- Primero, se han usado imágenes diferentes para el fondo del index y la galería, según la resolución. En el contacto, se ha utilizado un color diferente dependiendo de la resolución. 
+- Luego en galería, que es la página con más fotos, se ha utilizado el "preload" y "prefetch" para darle prioridad a la carga de la imagen de picture. A parte de esto, use el picture con 3 imágenes diferentes cargadas, para que dependiendo del tamaño se viese una u otra.
+- Finalmente, se ha utilizado el truco explicado por la profesora, cargar primero una miniatura y luego con JavaScript sustituirla por la imagen real.

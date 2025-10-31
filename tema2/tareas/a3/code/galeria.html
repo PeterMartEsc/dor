@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preload" href="./img/sh2-og.jpg" as="image">
+    <link rel="prefetch" href="./img/sh1.png" as="image">
     <meta name="author" content="Pedro Martin Escuela">
     <title>Galería</title>
 </head>
@@ -15,10 +17,29 @@
             </a>
         </div>
         <div class="links">
-            <h2 class="linkEspecifico"><a href="inicio.html">Página de Inicio</a></h2>
-            <h2 class="linkEspecifico"><a href="galeria.html">Galería</a></h2>
-            <h2 class="linkEspecifico"><a href="contacto.html">Contacto</a></h2>
+            <h4 class="linkEspecifico"><a href="inicio.html">Página de Inicio</a></h4>
+            <h4 class="linkEspecifico"><a href="galeria.html">Galería</a></h4>
+            <h4 class="linkEspecifico"><a href="contacto.html">Contacto</a></h4>
         </div>
     </header>
+
+    <main>
+        <div class="picturesContainer">
+            <picture>
+                <source media="(width <= 450px)" srcset="./img/sh3.jpeg">
+                <source media="(width <= 650px)" srcset="./img/sh1.png">
+                <img src="./img/sh2.jpg" usemap="#workmap" alt="Sh Portada">
+            </picture>
+        </div>
+
+        <div class="contenedorMap">
+            <map name="workmap">
+                <area shape="rect" coords="34,44,270,350" alt="Wiki" href="https://silenthill.fandom.com/wiki/Silent_Hill_Wiki">
+                <area shape="rect" coords="290,172,333,250" alt="Konami Info" href="https://www.konami.com/games/silenthill/gate">
+                <area shape="default" coords="337,300,44" alt="Netflix Film" href="https://www.netflix.com/es/title/70044591">
+            </map>
+        </div>
+    </main>
+    <script src="./js/miniatura.js"></script>
 </body>
 </html>

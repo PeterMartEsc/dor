@@ -1,0 +1,120 @@
+body {
+    background-image: url("../img/sh2-remake2.png");
+    background-color: #484b49;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    height: 5rem;
+    width: auto;
+    background-color: #cbd1cd;
+}
+
+
+.logo {
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 14px;
+}
+
+.links {
+    display: flex;
+    align-self: center;
+    margin-left: 50px;
+}
+
+.linkEspecifico {
+    margin-left: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Galeria */
+.picturesContainer{
+    width: fit-content;
+    margin: auto;
+
+    margin-top: 50px;
+}
+
+.contenedorMap{
+    width: fit-content;
+    margin: auto;
+}
+
+
+/* Moviles */
+@media (min-height: 600px) and (min-width: 360px) and 
+            (max-height: 1000px) and (max-width: 800px) {
+    body {
+        background-image: url("../img/sh-vertical.jpeg");
+        background-color: #484b49;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header {
+        height: 3rem;
+        width: auto;
+        background-color: #cbd1cd;
+    }
+
+
+    .logo {
+        height: 20px;
+        margin-left: 50px;
+        margin-top: 14px;
+    }
+
+    .links {
+        display: flex;
+        align-self: center;
+    }
+
+    .linkEspecifico {
+        margin-left: 10px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Ipads */
+
+@media (min-height: 1000px) and (min-width: 800px) and
+        (max-height: 1300px) and (max-width: 900px){
+
+    body {
+        background-image: url("../img/sh2-remake2.png");
+        background-color: #484b49;
+        background-repeat: inherit;
+        background-size: cover;
+    }
+
+    header {
+        height: 3rem;
+        width: auto;
+        background-color: #cbd1cd;
+    }
+
+
+    .logo {
+        height: 20px;
+        margin-left: 50px;
+        margin-top: 14px;
+    }
+
+    .links {
+        display: flex;
+        align-self: center;
+    }
+
+    .linkEspecifico {
+        margin-left: 10px;
+        font-size: 0.8rem;
+    }
+}
