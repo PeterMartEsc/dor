@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Imagenes Vectoriales</title>
+</head>
+
+<body>
+    <!-- https://www.svgrepo.com/collection/cute-animal-vectors/ -->
+    <h2>Imágenes Vectoriales</h2>
+    <p><b>Ejemplo 1:</b> Etiqueta <b>&lt;img&gt;</b></p>
+    <img src="./img/penguin-svgrepo-com.svg" alt="Penguin Icon" title="Penguin Icon">
+
+    <p><b>Ejemplo 2:</b> Fondo <b>CSS</b></p>
+    <div class="icono"></div>
+
+    <p><b>Ejemplo 3:</b> SVG <b>Inline</b></p>
+    <svg width="120" height="120" viewBox="0 0 120">
+        <circle cx="60" cy="60" r="50" fill="aquamarine" stroke="rgb(70, 143, 118)" stroke-width="2" />
+        <text x="60" y="65" text-anchor="middle" font-size="20" fill="rgb(70, 143, 118)" font-family="Arial">
+            Pedro
+        </text>
+    </svg>
+
+    <p><b>Reto:</b> Realizar polígono</p>
+    <svg width="200" height="200" viewBox="0 0 120">
+        <polygon points="
+                20,148  
+                150,28
+                20,28 
+                150,148
+                " fill="rgb(229, 232, 151, 0.5)" stroke="#4764a6" stroke-width="2" fill-rule="evenodd"
+            filter="url(#sombra)" />
+        <defs>
+            <filter id="sombra">
+                <feDropShadow dx="-5" dy="5" flood-color="rgba(0, 0, 0, 1)" />
+            </filter>
+        </defs>
+    </svg>
+
+    <p><b>Ejemplo de los pollitos</b></p>
+    <svg width="240px" height="170px">
+        <defs>
+            <g>
+                <circle fill="gold" r="30" id="yellowball" />
+            </g>
+            <symbol id="mouth">
+                <polyline points="15 15 5 10 15 5" stroke="crimson" fill="none" stroke-width="3" />
+            </symbol>
+
+            <symbol id="bird">
+                <g stroke="brown">
+                    <polyline points="0 0 0 25" stroke-width="3" transform="translate(25 100)" />
+                    <polyline points="0 0 0 25" stroke-width="3" transform="translate(45 100)" />
+                    <polyline points="0 0 12 0" stroke-width="3" transform="translate(19 125)" />
+                    <polyline points="0 0 12 0" stroke-width="3" transform="translate(40 125)" />
+                </g>
+                <use xlink:href="#mouth" x="83" y="35" />
+                <use xlink:href="#yellowball" x="90" y="55" transform="scale(.75)" />
+                <use xlink:href="#yellowball" x="35" y="75" width="100" />
+                <polyline points="55 70 45 90 20 80" stroke="orange" stroke-width="3" fill="none" />
+                <circle fill="black" r="5" cx="75" cy="35" />
+                <circle fill="gray" r="1" cx="77" cy="35" />
+            </symbol>
+        </defs>
+        <use xlink:href="#bird" x="15" y="15" />
+        <use xlink:href="#bird" x="0" y="35" transform="translate(225 -20) scale(-1,1)" />
+    </svg>
+    <!-- points="
+        20,148  
+        150,28
+        20,28 
+        150,148
+
+        1,1
+        199,199
+        199,1
+        " -->
+    <!-- Flaticón -->
+</body>
+
+</html>
