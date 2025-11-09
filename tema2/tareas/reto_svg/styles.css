@@ -1,0 +1,15 @@
+.corazon{
+    animation: palpitar 2s infinite;
+}
+
+@keyframes palpitar {
+    0%{
+        scale: 100%;
+    }
+    50%{
+        scale: 120%;
+    }
+    100%{
+        scale: 100%;
+    }
+}
